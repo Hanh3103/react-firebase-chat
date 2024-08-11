@@ -1,0 +1,72 @@
+.chatList{
+    flex: 1;
+    overflow-y: scroll;
+    .search{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+
+        .searchbar{
+            flex: 1; /* This is the flex property, that is used to set the width of the input field */
+            background-color: rgb(17, 25, 40, 0.5);
+            display: flex ;
+            gap: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            align-items: center;
+
+            input{
+                border: none;
+                color: white;
+                outline: none ;
+                flex: 1; /* This is the flex property, that is used to set the width of the input field */
+                background-color: transparent;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .add{
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            background-color: rgb(17, 25, 40, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+
+    .chats{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .chatItem{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            border-bottom: 1px solid #dddddd35;
+            gap: 20px;
+            padding: 10px;
+
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+
+            .chatinfo{
+                flex:1;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
+
+}
